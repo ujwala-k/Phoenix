@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Session | SLIET Mentorship</title>
     <link rel="stylesheet" href="./booking.css">
+    
 </head>
 <body>
     <header class="navbar">
@@ -24,17 +25,37 @@
         <form id="booking-form">
             <label for="mentor">Select Mentor:</label>
             <select id="mentor">
-                <option value="Dr. A. Kumar">Dr. A. Kumar</option>
-                <option value="Prof. B. Singh">Prof. B. Singh</option>
+                <option value="Dr. Birmohan Singh">Dr. Birmohan Singh</option>
+                <option value="Dr. Damanpreet Singh">Dr. Damanpreet Singh</option>
+                <option value="Dr. Major Singh Goraya">Dr. Major Singh Goraya</option>
+                <option value="Dr. Manoj Sachan">Dr. Manoj Sachan</option>
+                <option value="Dr. Gurjinder Kaur">Dr. Gurjinder Kaur</option>
+                <option value="Dr. Amar Nath">Dr. Amar Nath</option>
+                <option value="Dr. Jagdeep Singh">Dr. Jagdeep Singh</option>
+                <option value="Dr. Manminder Singh">Dr. Manminder Singh</option>
+                <option value="Dr. Preetpal Kaur Buttar">Dr. Preetpal Kaur Buttar</option>
+                <option value="Dr. Tajinder Singh">Dr. Tajinder Singh</option>
+                <option value="Dr. Utkarsh">Dr. Utkarsh</option>
+                <option value="Dr. VINOD KUMAR VERMA">Dr. VINOD KUMAR VERMA</option>
+                <option value="Jaspal Singh">Jaspal Singh</option>
+                <option value="Rahul Gautam">Rahul Gautam</option>
             </select>
 
-            <label for="slot">Select Time Slot:</label>
+            <!-- <label for="slot">Select Time Slot:</label>
             <select id="slot">
                 <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
                 <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
-            </select>
+            </select> -->
+            <label for="slot">Select Time Slot:</label>
+                <input type="datetime-local" id="slot" name="slot" required>
 
-            <button type="submit">Book Now</button>
+                <label for="query">Write Your Query:</label>
+                <textarea id="query" name="query" rows="4" rows=10 cols="20"></textarea>
+            
+
+
+            <button type="submit">Book Session</button>
+            
         </form>
         <div id="confirmation"></div>
     </section>
