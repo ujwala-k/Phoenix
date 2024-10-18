@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session | SLIET Mentorship</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="Sant_Longowal_Institute_of_Engineering_and_Technology_Logo.png" alt="SLIET Logo" class="logo-img">
+            <span>SLIET Faculty Directory</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="mentors.html">View Mentors</a>
+            <button class="btn-login">Login</button>
+        </nav>
+    </header>
+
+    <section class="booking-section">
+        <h2>Book a Mentorship Session</h2>
+        <form id="booking-form">
+            <label for="mentor">Select Mentor:</label>
+            <select id="mentor">
+                <option value="Dr. A. Kumar">Dr. A. Kumar</option>
+                <option value="Prof. B. Singh">Prof. B. Singh</option>
+            </select>
+
+            <label for="slot">Select Time Slot:</label>
+            <select id="slot">
+                <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+                <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="confirmation"></div>
+    </section>
+
+    <script src="booking.js"></script>
+</body>
+</html>
